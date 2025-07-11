@@ -262,7 +262,7 @@ Could you be more specific about what aspect of ai you'd like to explore? I'm he
                     <Bot className="w-4 h-4" />
                   )}
                   <span className="font-mono text-xs">
-                    {message.type === 'user' ? 'You' : 'PlankXploit AI'}
+                    {message.type === 'user' ? 'You' : 'RyuuIzumi AI'}
                   </span>
                 </div>
                 <pre className="font-mono text-sm whitespace-pre-wrap">
@@ -280,7 +280,7 @@ Could you be more specific about what aspect of ai you'd like to explore? I'm he
               <div className="bg-gray-800 text-green-300 px-4 py-3 rounded-lg">
                 <div className="flex items-center space-x-2">
                   <Bot className="w-4 h-4" />
-                  <span className="font-mono text-xs">PlankXploit AI</span>
+                  <span className="font-mono text-xs">RyuuIzumi AI</span>
                 </div>
                 <div className="flex items-center space-x-1 mt-2">
                   <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
