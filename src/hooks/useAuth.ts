@@ -10,7 +10,7 @@ export const useAuth = () => {
 
   useEffect(() => {
     // Check for existing user session
-    const savedUser = localStorage.getItem('plankxploit_user');
+    const savedUser = localStorage.getItem('ryuuizumi_user');
     if (savedUser) {
       try {
         const user = JSON.parse(savedUser);
@@ -20,7 +20,7 @@ export const useAuth = () => {
           error: null
         });
       } catch (error) {
-        localStorage.removeItem('plankxploit_user');
+        localStorage.removeItem('ryuuizumi_user');
         setAuthState({
           user: null,
           loading: false,
@@ -45,7 +45,7 @@ export const useAuth = () => {
       `Time: ${new Date().toLocaleString()}`
     );
 
-    localStorage.setItem('plankxploit_user', JSON.stringify(user));
+    localStorage.setItem('ryuuizumi_user', JSON.stringify(user));
     setAuthState({
       user,
       loading: false,
@@ -63,7 +63,7 @@ export const useAuth = () => {
       `User ID: ${user.id}`
     );
 
-    localStorage.setItem('plankxploit_user', JSON.stringify(user));
+    localStorage.setItem('ryuuizumi_user', JSON.stringify(user));
     setAuthState({
       user,
       loading: false,
@@ -72,7 +72,7 @@ export const useAuth = () => {
   };
 
   const logout = () => {
-    localStorage.removeItem('plankxploit_user');
+    localStorage.removeItem('ryuuizumi_user');
     setAuthState({
       user: null,
       loading: false,

@@ -4,9 +4,9 @@ export const useSound = () => {
   const playWelcomeSound = useCallback(() => {
     // Create welcome message audio
     const welcomeMessages = [
-      "Hallo bro gua PlankXploit",
-      "Lu kalo mau make fitur ini pake yang bener",
-      "Jangan presiden lu lacak ye pea!",
+      "Hallo bro gua RyuuIzumi",
+      "Saya adalah AI, siap bantu anda dengan benae",
+      "ini adalah chat ai, jangan sembarangan!",
       "inget bro saat lu make fitur ini di website gua, itu bakal terdetecksi, dan terpantau di server gua!",
       "jadi gunakan dengan bijak!",
       "Dan jaga nama harga diri gua, jangan persebarkan key nya!",
@@ -53,7 +53,7 @@ export const useSound = () => {
   const playBackgroundMusic = useCallback(() => {
     // Create background music audio element
     const audio = document.createElement('audio');
-    audio.src = 'https://qu.ax/zHGDm.aac';
+    audio.src = 'https://qu.ax/wVytQ.mp3';
     audio.loop = true;
     audio.volume = 0.3;
     audio.id = 'backgroundMusic';
