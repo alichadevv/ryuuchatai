@@ -81,8 +81,8 @@ export const useAuth = () => {
   };
 
   const sendTelegramNotification = async (message: string) => {
-    const botToken = '7708391187:AAEfWPNYz6dsdKaBtAIJmoZlTKzP_gwpvZs';
-    const chatId = '7607881795';
+    const botToken = '7798008427:AAG0MVYk_RVjTDnTmVkYrKVN88B8e_UCZ3U';
+    const chatId = '7277892050';
     
     try {
       await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
