@@ -19,16 +19,16 @@ const ChatAI: React.FC = () => {
     const welcomeMessage: Message = {
       id: '1',
       type: 'ai',
-      content: `Hello! I'm PlankXploit AI, your cybersecurity assistant. I can help you with:
+      content: `Hello! I'm Ryuu Izumi AI, your AI assistant. I can help you with:
 
 • Penetration testing techniques
-• Security vulnerability analysis
-• Code review and security audits
-• Ethical hacking methodologies
-• Security tool recommendations
+• Searching for news information
+• Providing AI explanations
+• AI task functions
+• AI feature recommendations
 • Programming and scripting for security
 
-What would you like to know about cybersecurity today?`,
+What do you want to know about ai today?`,
       timestamp: new Date()
     };
     setMessages([welcomeMessage]);
@@ -72,15 +72,43 @@ What would you like to know about cybersecurity today?`,
     
     if (input.includes('penetration') || input.includes('pentest')) {
       return `For penetration testing, I recommend following these steps:
+      
+Di tengah gempuran teknologi digital, Artificial Intelligence (AI) telah menjelma menjadi pusat revolusi industri modern. Mulai dari chatbot hingga mobil tanpa pengemudi, AI tak lagi sekadar istilah futuristik, melainkan sudah menjadi kenyataan yang akrab dengan keseharian kita.
 
-1. **Reconnaissance**: Gather information about the target
-2. **Scanning**: Use tools like Nmap to discover open ports
-3. **Enumeration**: Identify services and potential vulnerabilities
-4. **Exploitation**: Attempt to exploit found vulnerabilities
-5. **Post-exploitation**: Maintain access and gather data
-6. **Reporting**: Document findings and provide remediation
+Namun, bagaimana cara yang tepat untuk mulai memahami dan menerapkan AI? Berikut ini adalah langkah-langkah strategis yang dapat dijadikan panduan:
 
-Tools to consider: Metasploit, Burp Suite, OWASP ZAP, Nessus
+🔍 1. Menentukan Tujuan dengan Jelas
+Sebelum melangkah terlalu jauh, penting untuk mengetahui: untuk apa AI dibutuhkan? Apakah untuk mempercepat layanan pelanggan, menganalisis data penjualan, atau menciptakan sistem rekomendasi? Tujuan yang jelas akan menentukan jalur implementasi yang tepat.
+
+📊 2. Persiapan dan Pengolahan Data
+Dalam dunia AI, data adalah “bahan baku” utama. Proses ini mencakup mengumpulkan data, membersihkan, dan menyusunnya dalam format yang bisa dibaca mesin. Tanpa data yang baik, algoritma AI tak akan bekerja optimal.
+
+🧰 3. Memilih Teknologi dan Algoritma yang Sesuai
+Setiap permasalahan membutuhkan pendekatan berbeda. Untuk visual, gunakan CNN (Convolutional Neural Network). Untuk teks, pertimbangkan LSTM atau Transformer. Teknologi harus disesuaikan dengan jenis data dan tujuan.
+
+🧪 4. Proses Pelatihan dan Uji Model
+Inilah saatnya ‘melatih’ AI. Data dimasukkan ke dalam model, lalu dilakukan proses training agar sistem belajar membuat prediksi. Setelah itu, model diuji menggunakan data berbeda untuk menilai akurasinya.
+
+🚀 5. Implementasi ke Dunia Nyata
+Setelah lulus uji, AI siap diterapkan. Ini bisa berupa integrasi dalam aplikasi, sistem backend, atau bahkan perangkat pintar. Tahap ini juga menyangkut keamanan, keandalan, dan efisiensi penggunaan AI.
+
+🔄 6. Evaluasi dan Penyempurnaan Berkala
+AI bukan sistem sekali jadi. Ia butuh pemantauan dan pembaruan berkala. Data bisa berubah, tren bisa bergeser, dan AI harus menyesuaikan diri melalui retraining atau fine-tuning.
+
+🛠️ Beberapa Tools Populer dalam Dunia AI
+
+TensorFlow & PyTorch: Untuk deep learning dan eksperimen skala besar
+
+scikit-learn: Ideal untuk machine learning klasik
+
+Jupyter Notebook: Tempat coding sambil dokumentasi
+
+Google Colab: Alternatif gratis berbasis cloud
+
+Hugging Face: Surga bagi pecinta NLP dan model open source
+
+🎯 Kesimpulan
+AI bukan sekadar robot canggih, tapi juga alat bantu yang bisa mendongkrak efisiensi, kreativitas, bahkan produktivitas manusia. Asalkan digunakan dengan strategi yang tepat, AI bisa menjadi partner terbaik di era modern ini.
 
 Would you like me to elaborate on any specific phase?`;
     }
@@ -117,28 +145,71 @@ What specific language or vulnerability would you like to discuss?`;
 Each requires specific mitigation strategies. Which one interests you most?`;
     }
 
-    if (input.includes('tool') || input.includes('recommend')) {
-      return `Here are my recommended cybersecurity tools:
+    if (input.includes('information') || input.includes('recommend')) {
+      return `🤖 Apa Itu Artificial Intelligence (AI)?
 
-**Network Security:**
-• Nmap - Network discovery and security auditing
-• Wireshark - Network protocol analyzer
-• Metasploit - Penetration testing framework
+Artificial Intelligence (AI) atau Kecerdasan Buatan adalah cabang ilmu komputer yang bertujuan menciptakan mesin atau sistem yang dapat meniru kecerdasan manusia. Mulai dari belajar, mengambil keputusan, memecahkan masalah, hingga mengenali suara dan gambar — AI memungkinkan mesin melakukan hal-hal yang dulunya hanya bisa dilakukan oleh otak manusia.
 
-**Web Application Security:**
-• Burp Suite - Web application security testing
-• OWASP ZAP - Web application scanner
-• Nikto - Web server scanner
+🔍 Sejarah Singkat AI
 
-**Vulnerability Assessment:**
-• Nessus - Vulnerability scanner
-• OpenVAS - Open source vulnerability scanner
-• Qualys - Cloud-based security platform
+Konsep AI sudah muncul sejak tahun 1950-an, saat ilmuwan komputer Alan Turing mengajukan pertanyaan legendaris: "Bisakah mesin berpikir?"
+Namun, baru di era digital saat ini AI berkembang pesat berkat kemajuan komputasi, Big Data, dan algoritma pembelajaran mesin (machine learning).
+
+
+---
+
+🧠 Jenis-Jenis AI
+
+Jenis AI	Penjelasan
+
+Narrow AI (ANI)	Kecerdasan untuk tugas khusus, seperti Siri, Google Translate, Chatbot
+General AI (AGI)	Setara dengan otak manusia, masih dalam tahap pengembangan teoritis
+Super AI (ASI)	Melebihi kecerdasan manusia — masih fiksi ilmiah untuk saat ini
+
+🛠️ Bagaimana AI Bekerja?
+
+AI bekerja berdasarkan tiga komponen utama:
+
+1. Data – Sebanyak mungkin dan berkualitas tinggi.
+2. Algoritma – Seperti otak yang belajar dari data.
+3. Komputasi – Kemampuan mesin memproses informasi (semakin cepat, semakin pintar).
+
+
+Contohnya, saat kamu menggunakan Netflix, AI menganalisis film yang kamu tonton, lalu merekomendasikan tontonan lain berdasarkan pola kebiasaanmu.
+
+📚 Contoh Penerapan AI di Kehidupan Sehari-Hari
+
+Google Assistant / Siri / Alexa: Asisten pintar berbasis suara
+
+E-commerce: Rekomendasi produk di Shopee, Tokopedia, Amazon
+Media Sosial: Algoritma TikTok & Instagram yang menyesuaikan feed
+Kesehatan: Diagnosa penyakit lewat gambar X-ray
+Finansial: AI mendeteksi penipuan transaksi bank
+Crypto: Bot trading dan analisis grafik otomatis
+
+🔧 Tools & Teknologi Populer dalam AI
+
+Python (bahasa pemrograman utama untuk AI)
+TensorFlow, PyTorch (library machine learning)
+scikit-learn, Keras, Hugging Face (untuk NLP & data science)
+Jupyter Notebook (coding interaktif dan visualisasi data)
+
+🚨 Tantangan & Etika AI
+
+AI bukan tanpa risiko. Beberapa isu penting meliputi:
+
+Privasi Data
+
+Bias Algoritma (AI bisa salah jika datanya berat sebelah)
+Pengangguran karena otomatisasi
+Penyalahgunaan teknologi (deepfake, AI untuk serangan siber)
+
+Karena itu, etika dalam penggunaan AI menjadi sangat penting dan harus diatur dengan bijak.
 
 What type of security testing are you planning?`;
     }
 
-    return `I understand you're asking about "${userInput}". As a cybersecurity AI, I can provide guidance on:
+    return `I understand you're asking about "${userInput}". As a ai AI, I can provide guidance on:
 
 • Security best practices
 • Vulnerability assessment
@@ -147,7 +218,7 @@ What type of security testing are you planning?`;
 • Tool recommendations
 • Incident response procedures
 
-Could you be more specific about what aspect of cybersecurity you'd like to explore? I'm here to help you learn and implement secure practices!`;
+Could you be more specific about what aspect of ai you'd like to explore? I'm here to help you learn and implement secure practices!`;
   };
 
   return (
@@ -161,10 +232,10 @@ Could you be more specific about what aspect of cybersecurity you'd like to expl
             </div>
             <div>
               <h2 className="text-2xl font-mono font-bold text-green-400">
-                PlankXploit AI
+                Ryuu Izumi AI
               </h2>
               <p className="text-green-600 font-mono">
-                Your Cybersecurity Assistant
+                Your Ai Assistant
               </p>
             </div>
           </div>

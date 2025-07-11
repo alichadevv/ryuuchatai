@@ -37,7 +37,7 @@ const MessageDeveloper: React.FC = () => {
             Message Developer
           </h2>
           <p className="text-green-600 font-mono">
-            Send a message directly to PlankDev
+            Send a message directly to Ryuuizumi
           </p>
         </div>
 
@@ -113,7 +113,7 @@ const MessageDeveloper: React.FC = () => {
         {/* Footer */}
         <div className="mt-8 text-center text-green-600 font-mono text-sm">
           <p>Response time: Usually within 24 hours</p>
-          <p className="mt-1">For urgent matters, contact via WhatsApp: 083824299082</p>
+          <p className="mt-1">For urgent matters, contact via WhatsApp: 081387796894</p>
         </div>
       </div>
     </div>

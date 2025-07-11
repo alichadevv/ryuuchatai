@@ -67,7 +67,7 @@ const MainContent: React.FC<MainContentProps> = ({ user, onSectionChange }) => {
       <div className="text-center mb-12">
         <div className="mb-6">
           <img
-            src="https://files.catbox.moe/15tfrb.jpg"
+            src="https://files.catbox.moe/hla7hv.jpg"
             alt="RyuuIzumi"
             className="w-32 h-32 rounded-full mx-auto border-4 border-green-500/50 shadow-lg"
           />
@@ -165,7 +165,7 @@ const MainContent: React.FC<MainContentProps> = ({ user, onSectionChange }) => {
       {/* Developer Info */}
       <div className="text-center text-green-400 font-mono">
         <h4 className="text-lg font-bold mb-2">Pengembang</h4>
-        <p className="text-green-300">• PlankDev (Developer)</p>
+        <p className="text-green-300">• RyuuIzumi (Creator)</p>
       </div>
 
       <style jsx>{`

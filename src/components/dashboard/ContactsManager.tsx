@@ -247,7 +247,7 @@ const ContactsManager: React.FC<ContactsManagerProps> = ({ user }) => {
                     <div className="flex items-center space-x-3 mb-3">
                       <div className="relative">
                         <img
-                          src={contactUser.avatar || "https://files.catbox.moe/hf13r2.png"}
+                          src={contactUser.avatar || "https://files.catbox.moe/hla7hv.jpg"}
                           alt={contact.customName || contact.contactUsername}
                           className="w-12 h-12 rounded-full"
                         />
@@ -365,7 +365,7 @@ const ContactsManager: React.FC<ContactsManagerProps> = ({ user }) => {
                     >
                       <div className="flex items-center space-x-3">
                         <img
-                          src={searchUser.avatar || "https://files.catbox.moe/hf13r2.png"}
+                          src={searchUser.avatar || "https://files.catbox.moe/hla7hv.jpg"}
                           alt={searchUser.username}
                           className="w-8 h-8 rounded-full"
                         />

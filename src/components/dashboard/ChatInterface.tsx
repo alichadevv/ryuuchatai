@@ -33,12 +33,12 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ user }) => {
     // Initialize with a default group
     const defaultGroup: Group = {
       id: 'default',
-      name: 'PlankXploit Community',
+      name: 'RyuuIzumi Community',
       description: 'Welcome to the main community chat',
       ownerId: 'admin',
       admins: ['admin'],
       members: [user.id, 'admin'],
-      inviteLink: 'https://plankxploit.com/invite/default',
+      inviteLink: 'https://ryuu-chat.xydlanlux.biz.id/invite/default',
       createdAt: new Date(),
       isPrivate: false,
       settings: {
@@ -56,8 +56,8 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ user }) => {
       {
         id: '1',
         senderId: 'admin',
-        senderName: 'PlankXploit',
-        content: 'Welcome to PlankXploit Community! 🚀',
+        senderName: 'RyuuIzumi',
+        content: 'Welcome to RyuuIzumi Community! 🚀',
         timestamp: new Date(),
         type: 'text',
         groupId: 'default'
