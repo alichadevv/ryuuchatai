@@ -86,7 +86,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose, activeSection, onSec
         {/* Footer */}
         <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-green-500/30">
           <div className="text-center text-green-600 font-mono text-sm">
-            <p>PlankXploit v2.1</p>
+            <p>Ryuu Izumi v2.1</p>
             <p className="text-xs mt-1">Secure Communication</p>
           </div>
         </div>

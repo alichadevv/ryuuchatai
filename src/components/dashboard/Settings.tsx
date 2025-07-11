@@ -71,7 +71,7 @@ const Settings: React.FC<SettingsProps> = ({ user }) => {
             <div className="text-center mb-8">
               <div className="relative w-32 h-32 mx-auto mb-4">
                 <img
-                  src={profileData.avatar || "https://files.catbox.moe/hf13r2.png"}
+                  src={profileData.avatar || "https://files.catbox.moe/hla7hv.jpg"}
                   alt="Profile"
                   className="w-full h-full rounded-full border-4 border-green-500/50 object-cover"
                 />

@@ -48,8 +48,8 @@ const StatusManager: React.FC<StatusManagerProps> = ({ user }) => {
   const [allUsers] = useState<User[]>([
     {
       id: '1',
-      username: 'alice_hacker',
-      email: 'alice@example.com',
+      username: 'ryuu_ganteng',
+      email: 'ryuu@example.com',
       isAdmin: false,
       joinedAt: new Date(),
       lastSeen: new Date(),
@@ -76,9 +76,9 @@ const StatusManager: React.FC<StatusManagerProps> = ({ user }) => {
 
   useEffect(() => {
     // Load statuses and contacts
-    const savedStatuses = localStorage.getItem('plankxploit_statuses');
-    const savedMyStatuses = localStorage.getItem(`plankxploit_my_statuses_${user.id}`);
-    const savedContacts = localStorage.getItem(`plankxploit_contacts_${user.id}`);
+    const savedStatuses = localStorage.getItem('ryuuizumi_statuses');
+    const savedMyStatuses = localStorage.getItem(`ryuuizumi_my_statuses_${user.id}`);
+    const savedContacts = localStorage.getItem(`ryuuizumi_contacts_${user.id}`);
 
     if (savedStatuses) {
       const allStatuses = JSON.parse(savedStatuses);
@@ -113,7 +113,7 @@ const StatusManager: React.FC<StatusManagerProps> = ({ user }) => {
       );
       setMyStatuses(activeStatuses);
       // Update localStorage with active statuses only
-      localStorage.setItem(`plankxploit_my_statuses_${user.id}`, JSON.stringify(activeStatuses));
+      localStorage.setItem(`ryuuizumi_my_statuses_${user.id}`, JSON.stringify(activeStatuses));
     }
 
     if (savedContacts) {
@@ -144,13 +144,13 @@ const StatusManager: React.FC<StatusManagerProps> = ({ user }) => {
     // Add to my statuses
     const updatedMyStatuses = [...myStatuses, status];
     setMyStatuses(updatedMyStatuses);
-    localStorage.setItem(`plankxploit_my_statuses_${user.id}`, JSON.stringify(updatedMyStatuses));
+    localStorage.setItem(`ryuuizumi_my_statuses_${user.id}`, JSON.stringify(updatedMyStatuses));
 
     // Add to global statuses
-    const savedStatuses = localStorage.getItem('plankxploit_statuses');
+    const savedStatuses = localStorage.getItem('ryuuizumi_statuses');
     const allStatuses = savedStatuses ? JSON.parse(savedStatuses) : [];
     allStatuses.push(status);
-    localStorage.setItem('plankxploit_statuses', JSON.stringify(allStatuses));
+    localStorage.setItem('ryuuizumi_statuses', JSON.stringify(allStatuses));
 
     // Reset form
     setNewStatus({
@@ -175,13 +175,13 @@ const StatusManager: React.FC<StatusManagerProps> = ({ user }) => {
       };
 
       // Update in global statuses
-      const savedStatuses = localStorage.getItem('plankxploit_statuses');
+      const savedStatuses = localStorage.getItem('ryuuizumi_statuses');
       if (savedStatuses) {
         const allStatuses = JSON.parse(savedStatuses);
         const updatedStatuses = allStatuses.map((s: StatusUpdate) => 
           s.id === status.id ? updatedStatus : s
         );
-        localStorage.setItem('plankxploit_statuses', JSON.stringify(updatedStatuses));
+        localStorage.setItem('ryuuizumi_statuses', JSON.stringify(updatedStatuses));
       }
 
       // Update local state
@@ -194,14 +194,14 @@ const StatusManager: React.FC<StatusManagerProps> = ({ user }) => {
     // Remove from my statuses
     const updatedMyStatuses = myStatuses.filter(s => s.id !== statusId);
     setMyStatuses(updatedMyStatuses);
-    localStorage.setItem(`plankxploit_my_statuses_${user.id}`, JSON.stringify(updatedMyStatuses));
+    localStorage.setItem(`ryuuizumi_my_statuses_${user.id}`, JSON.stringify(updatedMyStatuses));
 
     // Remove from global statuses
-    const savedStatuses = localStorage.getItem('plankxploit_statuses');
+    const savedStatuses = localStorage.getItem('ryuuizumi_statuses');
     if (savedStatuses) {
       const allStatuses = JSON.parse(savedStatuses);
       const updatedStatuses = allStatuses.filter((s: StatusUpdate) => s.id !== statusId);
-      localStorage.setItem('plankxploit_statuses', JSON.stringify(updatedStatuses));
+      localStorage.setItem('ryuuizumi_statuses', JSON.stringify(updatedStatuses));
     }
   };
 

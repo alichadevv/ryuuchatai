@@ -9,7 +9,7 @@ interface MainContentProps {
 
 const MainContent: React.FC<MainContentProps> = ({ user, onSectionChange }) => {
   const [typingText, setTypingText] = useState('');
-  const fullText = 'GAUSAH ANEH²';
+  const fullText = 'CUKUP DAN GAUSAH ANEH²';
 
   useEffect(() => {
     let currentIndex = 0;
@@ -68,14 +68,14 @@ const MainContent: React.FC<MainContentProps> = ({ user, onSectionChange }) => {
         <div className="mb-6">
           <img
             src="https://files.catbox.moe/15tfrb.jpg"
-            alt="PlankXploit"
+            alt="RyuuIzumi"
             className="w-32 h-32 rounded-full mx-auto border-4 border-green-500/50 shadow-lg"
           />
         </div>
         
         <div className="mb-4">
           <h1 className="text-3xl font-mono font-bold text-green-400 glitch-text mb-2">
-            PlankXploit Chat
+            RyuuIzumi Chat
           </h1>
           <div className="text-green-300 font-mono text-lg h-8">
             <span className="typing-animation">{typingText}</span>
@@ -111,7 +111,7 @@ const MainContent: React.FC<MainContentProps> = ({ user, onSectionChange }) => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <a
-            href="https://wa.me/6283824299082"
+            href="https://wa.me/6281387796894"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-lg transition-colors flex items-center space-x-3"
@@ -121,7 +121,7 @@ const MainContent: React.FC<MainContentProps> = ({ user, onSectionChange }) => {
           </a>
           
           <a
-            href="https://whatsapp.com/channel/0029Vb2QKduA89MpcV9yGr1z"
+            href="https://whatsapp.com/channel/0029VaxdW8SL2ATwTdA6Ty1d"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-lg transition-colors flex items-center space-x-3"
@@ -131,7 +131,7 @@ const MainContent: React.FC<MainContentProps> = ({ user, onSectionChange }) => {
           </a>
           
           <a
-            href="https://www.instagram.com/anonymous_81bs?igsh=OHlhcWo5YnZiNTgz"
+            href="https://www.instagram.com/xydlanlux?igsh=OHlhcWo5YnZiNTgz"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white p-4 rounded-lg transition-colors flex items-center space-x-3"
@@ -141,7 +141,7 @@ const MainContent: React.FC<MainContentProps> = ({ user, onSectionChange }) => {
           </a>
           
           <a
-            href="https://www.tiktok.com/@plankton_4you?_t=ZS-8tytCC9w0U3&_r=1"
+            href="https://www.tiktok.com/@xarenarenata?_t=ZS-8tytCC9w0U3&_r=1"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-black hover:bg-gray-800 text-white p-4 rounded-lg transition-colors flex items-center space-x-3"
@@ -151,7 +151,7 @@ const MainContent: React.FC<MainContentProps> = ({ user, onSectionChange }) => {
           </a>
           
           <a
-            href="https://planldev-kebutuhanhosting.vercel.app"
+            href="https://xydlanlux.biz.id"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-lg transition-colors flex items-center space-x-3"

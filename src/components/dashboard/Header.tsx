@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({ user, onMenuClick, onLogout }) => {
             
             <div className="ml-4">
               <h1 className="text-xl font-mono font-bold text-green-400 glitch-text">
-                PlankXploit
+                RyuuIzumi
               </h1>
               <p className="text-xs text-green-600">Community Platform</p>
             </div>
@@ -49,7 +49,7 @@ const Header: React.FC<HeaderProps> = ({ user, onMenuClick, onLogout }) => {
               
               <div className="relative">
                 <img
-                  src={user.avatar || "https://files.catbox.moe/hf13r2.png"}
+                  src={user.avatar || "https://files.catbox.moe/hla7hv.jpg"}
                   alt="Profile"
                   className="w-8 h-8 rounded-full border-2 border-green-500/50"
                 />

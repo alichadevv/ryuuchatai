@@ -11,32 +11,32 @@ const Content: React.FC = () => {
   const videos = [
     {
       id: '1',
-      url: 'https://files.catbox.moe/73h8it.mp4',
-      title: 'PlankXploit Demo 1',
+      url: 'https://files.catbox.moe/0zrf92.mp4',
+      title: 'RyuuIzumiDemo 1',
       description: 'Advanced penetration testing demonstration'
     },
     {
       id: '2',
-      url: 'https://files.catbox.moe/pzsila.mp4',
-      title: 'PlankXploit Demo 2',
+      url: 'https://files.catbox.moe/0zrf92.mp4',
+      title: 'RyuuIzumi Demo 2',
       description: 'Network security analysis tools'
     },
     {
       id: '3',
-      url: 'https://files.catbox.moe/u63jlv.mp4',
-      title: 'PlankXploit Demo 3',
+      url: 'https://files.catbox.moe/0zrf92.mp4',
+      title: 'RyuuIzumi Demo 3',
       description: 'Vulnerability assessment showcase'
     },
     {
       id: '4',
-      url: 'https://files.catbox.moe/kwqkt2.mp4',
-      title: 'PlankXploit Demo 4',
+      url: 'https://files.catbox.moe/0zrf92.mp4',
+      title: 'RyuuIzumi Demo 4',
       description: 'Exploitation framework tutorial'
     },
     {
       id: '5',
-      url: 'https://files.catbox.moe/u4q8mf.mp4',
-      title: 'PlankXploit Demo 5',
+      url: 'https://files.catbox.moe/0zrf92.mp4',
+      title: 'RyuuIzumi Demo 5',
       description: 'Security testing methodologies'
     }
   ];
@@ -120,7 +120,7 @@ const Content: React.FC = () => {
             Content Gallery
           </h2>
           <p className="text-green-600 font-mono">
-            PlankXploit Demo Videos & Content
+            RyuuIzumi Demo Videos & Content
           </p>
         </div>
 

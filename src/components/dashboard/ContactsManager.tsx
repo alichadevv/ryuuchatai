@@ -19,8 +19,8 @@ const ContactsManager: React.FC<ContactsManagerProps> = ({ user }) => {
   const [allUsers] = useState<User[]>([
     {
       id: '1',
-      username: 'alice_hacker',
-      email: 'alice@example.com',
+      username: 'ryuu_ganteng',
+      email: 'ryuu@example.com',
       isAdmin: false,
       joinedAt: new Date(),
       lastSeen: new Date(),
@@ -60,7 +60,7 @@ const ContactsManager: React.FC<ContactsManagerProps> = ({ user }) => {
 
   useEffect(() => {
     // Load contacts from localStorage
-    const savedContacts = localStorage.getItem(`plankxploit_contacts_${user.id}`);
+    const savedContacts = localStorage.getItem(`ryuuizumi_contacts_${user.id}`);
     if (savedContacts) {
       setContacts(JSON.parse(savedContacts));
     }
@@ -68,7 +68,7 @@ const ContactsManager: React.FC<ContactsManagerProps> = ({ user }) => {
 
   useEffect(() => {
     // Save contacts to localStorage
-    localStorage.setItem(`plankxploit_contacts_${user.id}`, JSON.stringify(contacts));
+    localStorage.setItem(`ryuuizumi_contacts_${user.id}`, JSON.stringify(contacts));
   }, [contacts, user.id]);
 
   const handleSearch = (term: string) => {

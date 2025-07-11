@@ -4,34 +4,34 @@ import { Star, User } from 'lucide-react';
 const Rating: React.FC = () => {
   const ratings = [
     { id: 1, name: 'Alex Johnson', rating: 5, message: 'Amazing hacker community platform! The security features are top-notch.' },
-    { id: 2, name: 'Sarah Chen', rating: 5, message: 'PlankXploit has the best penetration testing tools. Highly recommend!' },
+    { id: 2, name: 'Sarah Chen', rating: 5, message: 'RyuuIzumi has the best penetration testing tools. Highly recommend!' },
     { id: 3, name: 'Mike Rodriguez', rating: 5, message: 'Excellent platform for cybersecurity enthusiasts. Great community support.' },
     { id: 4, name: 'Emma Wilson', rating: 5, message: 'The chat features are incredible. Perfect for secure communications.' },
     { id: 5, name: 'David Kim', rating: 5, message: 'PlankDev is a genius! This platform changed my approach to security testing.' },
     { id: 6, name: 'Lisa Thompson', rating: 5, message: 'Best hacker community I have ever joined. The tools are professional grade.' },
     { id: 7, name: 'James Brown', rating: 5, message: 'Outstanding platform with cutting-edge security features.' },
-    { id: 8, name: 'Maria Garcia', rating: 5, message: 'PlankXploit provides everything needed for ethical hacking. Love it!' },
+    { id: 8, name: 'Maria Garcia', rating: 5, message: 'RyuuIzumi provides everything needed for ethical hacking. Love it!' },
     { id: 9, name: 'Chris Lee', rating: 5, message: 'The interface is amazing and the community is very helpful.' },
     { id: 10, name: 'Anna Davis', rating: 5, message: 'Professional-grade security tools in an easy-to-use platform.' },
     { id: 11, name: 'Robert Taylor', rating: 5, message: 'Incredible platform for cybersecurity professionals. Highly recommended!' },
-    { id: 12, name: 'Jessica Miller', rating: 5, message: 'PlankXploit has revolutionized my penetration testing workflow.' },
+    { id: 12, name: 'Jessica Miller', rating: 5, message: 'RyuuIzumi has revolutionized my penetration testing workflow.' },
     { id: 13, name: 'Michael Anderson', rating: 5, message: 'Best security platform available. The developer is incredibly skilled.' },
     { id: 14, name: 'Rachel White', rating: 5, message: 'Amazing community and excellent security features. 10/10!' },
     { id: 15, name: 'Kevin Martinez', rating: 5, message: 'PlankDev created something truly special. This platform is fantastic!' },
     { id: 16, name: 'Sophia Johnson', rating: 5, message: 'The security tools are professional-grade. Excellent work!' },
     { id: 17, name: 'Daniel Wilson', rating: 5, message: 'Perfect platform for ethical hackers. Great community support.' },
-    { id: 18, name: 'Olivia Brown', rating: 5, message: 'PlankXploit is the future of cybersecurity platforms.' },
+    { id: 18, name: 'Olivia Brown', rating: 5, message: 'RyuuIzumi is the future of cybersecurity platforms.' },
     { id: 19, name: 'William Jones', rating: 5, message: 'Outstanding platform with incredible security features.' },
     { id: 20, name: 'Grace Lee', rating: 5, message: 'Best hacker community platform I have ever used!' },
-    { id: 21, name: 'Thomas Garcia', rating: 5, message: 'PlankXploit provides everything needed for security testing.' },
+    { id: 21, name: 'Thomas Garcia', rating: 5, message: 'RyuuIzumi provides everything needed for security testing.' },
     { id: 22, name: 'Isabella Davis', rating: 5, message: 'Amazing platform with excellent developer support.' },
     { id: 23, name: 'Mason Rodriguez', rating: 5, message: 'The security tools are incredibly advanced. Love this platform!' },
     { id: 24, name: 'Ava Thompson', rating: 5, message: 'PlankDev is a mastermind! This platform is incredible.' },
     { id: 25, name: 'Ethan Wilson', rating: 5, message: 'Best cybersecurity platform available. Highly recommend!' },
-    { id: 26, name: 'Mia Johnson', rating: 5, message: 'PlankXploit has changed my approach to ethical hacking.' },
+    { id: 26, name: 'Mia Johnson', rating: 5, message: 'RyuuIzumi has changed my approach to ethical hacking.' },
     { id: 27, name: 'Alexander Brown', rating: 5, message: 'Outstanding platform with professional-grade security tools.' },
     { id: 28, name: 'Charlotte Lee', rating: 5, message: 'Incredible community and amazing security features.' },
-    { id: 29, name: 'Benjamin Garcia', rating: 5, message: 'PlankXploit is the ultimate platform for security professionals.' },
+    { id: 29, name: 'Benjamin Garcia', rating: 5, message: 'RyuuIzumi is the ultimate platform for security professionals.' },
     { id: 30, name: 'Amelia Davis', rating: 5, message: 'Perfect platform for cybersecurity enthusiasts. 5 stars!' }
   ];
 
@@ -60,7 +60,7 @@ const Rating: React.FC = () => {
             User Ratings
           </h2>
           <p className="text-green-600 font-mono">
-            What our community members say about PlankXploit
+            What our community members say about RyuuIzumi
           </p>
         </div>
 
