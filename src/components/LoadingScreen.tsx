@@ -12,7 +12,7 @@ const LoadingScreen: React.FC = () => {
     'Starting network services...',
     'Configuring security protocols...',
     'Establishing encrypted connections...',
-    'Loading PlankXploit framework...',
+    'Loading RyuuIzumi framework...',
     'System ready!'
   ];
 
@@ -57,10 +57,10 @@ const LoadingScreen: React.FC = () => {
         {/* Logo */}
         <div className="mb-8">
           <div className="text-4xl font-mono font-bold text-green-400 mb-4 glitch-text">
-            PlankXploit
+            RyuuIzumi
           </div>
           <div className="text-green-300 text-sm font-mono">
-            Hacker Community Platform
+            Community AI Chat
           </div>
         </div>
 
@@ -73,7 +73,7 @@ const LoadingScreen: React.FC = () => {
               <div className="w-3 h-3 bg-green-500 rounded-full"></div>
             </div>
             <div className="ml-4 text-green-400 font-mono text-sm">
-              root@plankxploit:~#
+              root@ryuuizumi:~#
             </div>
           </div>
 
@@ -116,7 +116,7 @@ const LoadingScreen: React.FC = () => {
             </div>
             <div className="flex items-center space-x-2">
               <HardDrive className="w-4 h-4" />
-              <span>Memory: 32GB DDR4</span>
+              <span>Memory: 248GB DDR10</span>
             </div>
             <div className="flex items-center space-x-2">
               <Wifi className="w-4 h-4" />
@@ -124,7 +124,7 @@ const LoadingScreen: React.FC = () => {
             </div>
             <div className="flex items-center space-x-2">
               <Code className="w-4 h-4" />
-              <span>OS: PlankOS v2.1</span>
+              <span>OS: RyuuOS v22.1</span>
             </div>
           </div>
         </div>

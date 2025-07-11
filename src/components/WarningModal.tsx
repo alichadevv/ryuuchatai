@@ -88,7 +88,7 @@ const WarningModal: React.FC<WarningModalProps> = ({ warning, onClose }) => {
               This warning will remain on your record. Repeated violations may result in account suspension.
             </p>
             <div className="text-red-700 font-mono text-xs">
-              <p>PlankXploit Security System</p>
+              <p>RyuuIzumi Assistant AI</p>
               <p>Violation ID: {warning.id}</p>
             </div>
           </div>

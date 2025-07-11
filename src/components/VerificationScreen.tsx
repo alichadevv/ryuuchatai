@@ -17,11 +17,7 @@ const VerificationScreen: React.FC<VerificationScreenProps> = ({
 }) => {
   const [verificationState, setVerificationState] = useState<VerificationState>({
     whatsapp1: false,
-    whatsapp2: false,
-    whatsapp3: false,
-    whatsappGroup: false,
-    tiktok: false,
-    instagram: false
+    youtube: false
   });
 
   const [showKey, setShowKey] = useState(false);
@@ -33,44 +29,16 @@ const VerificationScreen: React.FC<VerificationScreenProps> = ({
     {
       name: 'WhatsApp Channel 1',
       key: 'whatsapp1' as keyof VerificationState,
-      url: 'https://whatsapp.com/channel/0029Vb2QKduA89MpcV9yGr1z',
+      url: 'https://whatsapp.com/channel/0029VaxdW8SL2ATwTdA6Ty1d',
       color: 'bg-green-600 hover:bg-green-700',
       icon: '📱'
     },
     {
-      name: 'WhatsApp Channel 2',
-      key: 'whatsapp2' as keyof VerificationState,
-      url: 'https://whatsapp.com/channel/0029Vb5oaMGHrDZoHfMudf3f',
+      name: 'Subscribe Channel YouTube 2',
+      key: 'youtube' as keyof VerificationState,
+      url: 'https://youtube.com/@alichaicha_id',
       color: 'bg-green-600 hover:bg-green-700',
       icon: '📱'
-    },
-    {
-      name: 'WhatsApp Channel 3',
-      key: 'whatsapp3' as keyof VerificationState,
-      url: 'https://whatsapp.com/channel/0029Vay9jnG65yDFJDN6tG1j',
-      color: 'bg-green-600 hover:bg-green-700',
-      icon: '📱'
-    },
-    {
-      name: 'Join WhatsApp Group',
-      key: 'whatsappGroup' as keyof VerificationState,
-      url: 'https://chat.whatsapp.com/F79UF3o9epHANmQ6Ydyo2s?mode=r_t',
-      color: 'bg-green-600 hover:bg-green-700',
-      icon: '👥'
-    },
-    {
-      name: 'TikTok',
-      key: 'tiktok' as keyof VerificationState,
-      url: 'https://www.tiktok.com/@plankton_4you?_t=ZS-8tytCC9w0U3&_r=1',
-      color: 'bg-black hover:bg-gray-800',
-      icon: '🎵'
-    },
-    {
-      name: 'Instagram',
-      key: 'instagram' as keyof VerificationState,
-      url: 'https://www.instagram.com/plankton4you.dev/#',
-      color: 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700',
-      icon: '📷'
     }
   ];
 
@@ -81,12 +49,12 @@ const VerificationScreen: React.FC<VerificationScreenProps> = ({
 
   const generateKey = () => {
     const keys = [
-      'PLANK-X7K9-M4R2-N8Q1',
-      'HACK-3R2Z-B9X7-K5M1',
-      'CYBER-W8J4-P6L3-V9R2',
-      'MATRIX-Q2K8-H7N4-X1B9',
-      'GHOST-R6M3-Z9K7-P4L1',
-      'SHADOW-T8X2-J5Q9-N3M7'
+      'RYU-X7K9-M4R2-N8Q1',
+      'RYUUIZUMI-3R2Z-B9X7-K5M1',
+      'RYUGANTENG-W8J4-P6L3-V9R2',
+      'RYUAJA-Q2K8-H7N4-X1B9',
+      'RYUUU-R6M3-Z9K7-P4L1',
+      'RYUUUU-T8X2-J5Q9-N3M7'
     ];
     return keys[Math.floor(Math.random() * keys.length)];
   };
@@ -120,11 +88,7 @@ const VerificationScreen: React.FC<VerificationScreenProps> = ({
       alert('Key salah! Silakan ulangi verifikasi.');
       setVerificationState({
         whatsapp1: false,
-        whatsapp2: false,
-        whatsapp3: false,
-        whatsappGroup: false,
-        tiktok: false,
-        instagram: false
+        youtube: false
       });
       setInputKey('');
       setShowKey(false);
@@ -140,7 +104,7 @@ const VerificationScreen: React.FC<VerificationScreenProps> = ({
         loop 
         className="absolute inset-0 w-full h-full object-cover opacity-30"
       >
-        <source src="https://files.catbox.moe/p02695.mp4" type="video/mp4" />
+        <source src="https://files.catbox.moe/0zrf92.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay */}
@@ -151,7 +115,7 @@ const VerificationScreen: React.FC<VerificationScreenProps> = ({
         {/* Header */}
         <div className="text-center mb-12">
           <div className="text-6xl font-mono font-bold text-green-400 mb-4 glitch-text">
-            PlankXploit
+            RyuuIzumi
           </div>
           <div className="text-green-300 text-xl font-mono">
             Security Verification Required

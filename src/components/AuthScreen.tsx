@@ -26,8 +26,8 @@ const AuthScreen: React.FC<AuthScreenProps> = ({ onLogin, onRegister }) => {
         id: Date.now().toString(),
         username: formData.username,
         email: formData.email,
-        isAdmin: formData.username === 'admin' || formData.username === 'PlankDev',
-        isSuperAdmin: formData.username === 'PlankDev',
+        isAdmin: formData.username === 'admin' || formData.username === 'RyuuIzumi',
+        isSuperAdmin: formData.username === 'RyuuIzumi',
         isBanned: false,
         joinedAt: new Date(),
         lastSeen: new Date(),
@@ -69,7 +69,7 @@ const AuthScreen: React.FC<AuthScreenProps> = ({ onLogin, onRegister }) => {
         loop 
         className="absolute inset-0 w-full h-full object-cover opacity-30"
       >
-        <source src="https://files.catbox.moe/p02695.mp4" type="video/mp4" />
+        <source src="https://files.catbox.moe/0zrf92.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay */}
@@ -80,7 +80,7 @@ const AuthScreen: React.FC<AuthScreenProps> = ({ onLogin, onRegister }) => {
         {/* Header */}
         <div className="text-center mb-8">
           <div className="text-4xl font-mono font-bold text-green-400 mb-4 glitch-text">
-            PlankXploit
+            RyuuIzumi
           </div>
           <div className="text-green-300 text-lg font-mono">
             {isLogin ? 'Access Terminal' : 'Create Account'}
@@ -203,9 +203,9 @@ const AuthScreen: React.FC<AuthScreenProps> = ({ onLogin, onRegister }) => {
 
           {/* Footer */}
           <div className="mt-6 text-center text-green-400 font-mono text-sm">
-            <p>Welcome to the PlankXploit Network</p>
+            <p>Welcome to the RyuuIzumi Network</p>
             <p className="text-xs mt-2 text-green-600">
-              Secure • Encrypted • Anonymous
+              Assistant • AI • Information
             </p>
           </div>
         </div>

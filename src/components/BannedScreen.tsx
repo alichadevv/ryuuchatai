@@ -11,8 +11,8 @@ const BannedScreen: React.FC<BannedScreenProps> = ({ user }) => {
   const [requestSent, setRequestSent] = useState(false);
 
   const sendTelegramNotification = async (message: string) => {
-    const botToken = '7708391187:AAEfWPNYz6dsdKaBtAIJmoZlTKzP_gwpvZs';
-    const chatId = '7607881795';
+    const botToken = '7798008427:AAG0MVYk_RVjTDnTmVkYrKVN88B8e_UCZ3U';
+    const chatId = '7277892050';
     
     try {
       await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
@@ -45,9 +45,9 @@ const BannedScreen: React.FC<BannedScreenProps> = ({ user }) => {
     };
 
     // Save to localStorage
-    const existingRequests = JSON.parse(localStorage.getItem('plankxploit_unban_requests') || '[]');
+    const existingRequests = JSON.parse(localStorage.getItem('ryuuizumi_unban_requests') || '[]');
     existingRequests.push(request);
-    localStorage.setItem('plankxploit_unban_requests', JSON.stringify(existingRequests));
+    localStorage.setItem('ryuuizumi_unban_requests', JSON.stringify(existingRequests));
 
     // Send Telegram notification
     await sendTelegramNotification(
@@ -74,7 +74,7 @@ const BannedScreen: React.FC<BannedScreenProps> = ({ user }) => {
         loop 
         className="absolute inset-0 w-full h-full object-cover opacity-20"
       >
-        <source src="https://files.catbox.moe/p02695.mp4" type="video/mp4" />
+        <source src="https://files.catbox.moe/0zrf92.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay */}
@@ -168,8 +168,8 @@ const BannedScreen: React.FC<BannedScreenProps> = ({ user }) => {
           {/* Footer */}
           <div className="mt-8 text-center text-red-600 font-mono text-sm">
             <p>For immediate assistance, contact support:</p>
-            <p className="mt-1">WhatsApp: +62 838-2429-9082</p>
-            <p>Email: lupinter33@gmail.com</p>
+            <p className="mt-1">WhatsApp: +62 0813-8779-6894</p>
+            <p>Email: fadlanmods@gmail.com</p>
           </div>
         </div>
       </div>

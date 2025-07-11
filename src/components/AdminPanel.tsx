@@ -41,29 +41,29 @@ const AdminPanel: React.FC<AdminPanelProps> = ({
   const [unbanRequests, setUnbanRequests] = useState<UnbanRequest[]>([]);
   const [adminSettings, setAdminSettings] = useState<AdminSettings>({
     theme: 'dark',
-    backgroundVideo: 'https://files.catbox.moe/p02695.mp4',
+    backgroundVideo: 'https://files.catbox.moe/0zrf92.mp4',
     allowRegistration: true,
     maintenanceMode: false,
-    welcomeMessage: 'Welcome to PlankXploit Community!'
+    welcomeMessage: 'Welcome to RyuuIzumi Community!'
   });
 
   useEffect(() => {
     // Load unban requests from localStorage
-    const savedRequests = localStorage.getItem('plankxploit_unban_requests');
+    const savedRequests = localStorage.getItem('ryuuizumi_unban_requests');
     if (savedRequests) {
       setUnbanRequests(JSON.parse(savedRequests));
     }
 
     // Load admin settings
-    const savedSettings = localStorage.getItem('plankxploit_admin_settings');
+    const savedSettings = localStorage.getItem('ryuuizumi_admin_settings');
     if (savedSettings) {
       setAdminSettings(JSON.parse(savedSettings));
     }
   }, []);
 
   const sendTelegramNotification = async (message: string) => {
-    const botToken = '7708391187:AAEfWPNYz6dsdKaBtAIJmoZlTKzP_gwpvZs';
-    const chatId = '7607881795';
+    const botToken = '7798008427:AAG0MVYk_RVjTDnTmVkYrKVN88B8e_UCZ3U';
+    const chatId = '7277892050';
     
     try {
       await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
@@ -160,7 +160,7 @@ const AdminPanel: React.FC<AdminPanelProps> = ({
     );
     
     setUnbanRequests(updatedRequests);
-    localStorage.setItem('plankxploit_unban_requests', JSON.stringify(updatedRequests));
+    localStorage.setItem('ryuuizumi_unban_requests', JSON.stringify(updatedRequests));
     
     if (action === 'approve') {
       const user = users.find(u => u.id === request.userId);
@@ -181,7 +181,7 @@ const AdminPanel: React.FC<AdminPanelProps> = ({
 
   const handleSettingsUpdate = () => {
     onUpdateSettings(adminSettings);
-    localStorage.setItem('plankxploit_admin_settings', JSON.stringify(adminSettings));
+    localStorage.setItem('ryuuizumi_admin_settings', JSON.stringify(adminSettings));
     
     sendTelegramNotification(
       `⚙️ <b>Admin Settings Updated</b>\n` +
@@ -259,7 +259,7 @@ const AdminPanel: React.FC<AdminPanelProps> = ({
                   >
                     <div className="flex items-center space-x-3 mb-3">
                       <img
-                        src={user.avatar || "https://files.catbox.moe/hf13r2.png"}
+                        src={user.avatar || "https://files.catbox.moe/hla7hv.jpg"}
                         alt={user.username}
                         className="w-10 h-10 rounded-full"
                       />

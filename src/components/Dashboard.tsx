@@ -84,7 +84,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
         loop 
         className="absolute inset-0 w-full h-full object-cover opacity-20"
       >
-        <source src="https://files.catbox.moe/p02695.mp4" type="video/mp4" />
+        <source src="https://files.catbox.moe/0zrf92.mp4" type="video/mp4" />
       </video>
 
       {/* Overlay */}
